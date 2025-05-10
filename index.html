@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get A Care - Trusted Home Care Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Libre Baskerville', serif;
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Navbar -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="text-3xl font-bold text-[#7AE2CF]">
+                Get<span class="text-gray-800">A Care</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#" class="font-bold text-gray-800 hover:text-[#7AE2CF] transition">Home</a>
+                <a href="#" class="font-bold text-gray-800 hover:text-[#7AE2CF] transition">Services</a>
+                <a href="#" class="font-bold text-gray-800 hover:text-[#7AE2CF] transition">About Us</a>
+                <a href="#" class="font-bold text-gray-800 hover:text-[#7AE2CF] transition">Career</a>
+                <a href="#" class="font-bold text-gray-800 hover:text-[#7AE2CF] transition">Our Team</a>
+                <a href="#" class="font-bold text-gray-800 hover:text-[#7AE2CF] transition">Enquire Now</a>
+                <a href="#" class="bg-[#7AE2CF] text-white px-6 py-2 rounded-full font-bold hover:bg-[#5ec9b6] transition">Contact Us</a>
+            </div>
+            <button id="hamburger" class="md:hidden text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white w-full absolute left-0 top-full shadow-lg">
+            <div class="container mx-auto px-4 py-4 flex flex-col space-y-4">
+                <a href="#" class="font-bold text-gray-800 hover:text-[#7AE2CF] transition py-2">Home</a>
+                <a href="#" class="font-bold text-gray-800 hover:text-[#7AE2CF] transition py-2">Services</a>
+                <a href="#" class="font-bold text-gray-800 hover:text-[#7AE2CF] transition py-2">About Us</a>
+                <a href="#" class="font-bold text-gray-800 hover:text-[#7AE2CF] transition py-2">Career</a>
+                <a href="#" class="font-bold text-gray-800 hover:text-[#7AE2CF] transition py-2">Our Team</a>
+                <a href="#" class="font-bold text-gray-800 hover:text-[#7AE2CF] transition py-2">Enquire Now</a>
+                <a href="#" class="bg-[#7AE2CF] text-white px-6 py-2 rounded-full font-bold hover:bg-[#5ec9b6] transition text-center">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Carousel -->
+    <div class="relative pt-16">
+        <div class="carousel relative w-full h-screen overflow-hidden">
+            <!-- Slide 1 -->
+            <div class="carousel-slide absolute inset-0 w-full h-full flex items-center justify-center bg-gray-900 bg-opacity-50 transition-opacity duration-1000">
+                <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                     alt="Caregiving" 
+                     class="absolute inset-0 w-full h-full object-cover -z-10">
+                <div class="text-center text-white px-4 max-w-3xl">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">Trusted Home Care, Every Step</h1>
+                    <p class="text-xl mb-8">Providing compassionate and professional care services tailored to your loved ones' needs in the comfort of their own home.</p>
+                    <a href="#" class="bg-[#7AE2CF] hover:bg-[#5ec9b6] text-white font-bold py-3 px-8 rounded-full inline-block transition">Learn More</a>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-slide absolute inset-0 w-full h-full flex items-center justify-center bg-gray-900 bg-opacity-50 opacity-0 transition-opacity duration-1000">
+                <img src="https://images.unsplash.com/photo-1579684453423-f84349ef60b0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                     alt="Elderly Care" 
+                     class="absolute inset-0 w-full h-full object-cover -z-10">
+                <div class="text-center text-white px-4 max-w-3xl">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">Compassionate Caregivers</h1>
+                    <p class="text-xl mb-8">Our trained professionals provide the highest quality care with dignity and respect.</p>
+                    <a href="#" class="bg-[#7AE2CF] hover:bg-[#5ec9b6] text-white font-bold py-3 px-8 rounded-full inline-block transition">Meet Our Team</a>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-slide absolute inset-0 w-full h-full flex items-center justify-center bg-gray-900 bg-opacity-50 opacity-0 transition-opacity duration-1000">
+                <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                     alt="Family Care" 
+                     class="absolute inset-0 w-full h-full object-cover -z-10">
+                <div class="text-center text-white px-4 max-w-3xl">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">Personalized Care Plans</h1>
+                    <p class="text-xl mb-8">We create customized care plans to meet the unique needs of each individual and family.</p>
+                    <a href="#" class="bg-[#7AE2CF] hover:bg-[#5ec9b6] text-white font-bold py-3 px-8 rounded-full inline-block transition">Our Services</a>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel Controls -->
+        <button class="carousel-prev absolute left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-30 text-white p-3 rounded-full hover:bg-opacity-50 transition">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="carousel-next absolute right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-30 text-white p-3 rounded-full hover:bg-opacity-50 transition">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <!-- Carousel Indicators -->
+        <div class="absolute bottom-8 left-0 right-0 flex justify-center space-x-2">
+            <button class="carousel-indicator w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-100 transition"></button>
+            <button class="carousel-indicator w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-100 transition"></button>
+            <button class="carousel-indicator w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-100 transition"></button>
+        </div>
+    </div>
+
+
+    <section class="px-4 py-12 md:px-16 bg-white text-center">
+        <h4 class="text-blue-900 font-semibold text-lg mb-2">Our Values</h4>
+        <h2 class="text-2xl md:text-4xl font-bold text-gray-900 mb-6">
+          We operate in baros all over the London and all over UK
+        </h2>
+        <p class="text-gray-700 mb-10">
+          Our core values are: trust, integrity, passion, stability, compassion, community,
+        </p>
+      
+        <div class="space-y-6 max-w-4xl mx-auto">
+          <!-- Integrity -->
+          <div class="bg-white shadow-md rounded-md p-6 text-left">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="bg-blue-900 text-white rounded-full p-1.5">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2"
+                     viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 4v16m8-8H4" />
+                </svg>
+              </div>
+              <h3 class="font-semibold text-lg text-gray-900">Integrity</h3>
+            </div>
+            <p class="text-gray-700">
+              We believe that in order to be able to operate successfully, we must keep our moral principles and the belief
+              that what we set out to achieve is appreciated by staff who appreciate and respect the company's integrity,
+              vision, and values.
+            </p>
+          </div>
+      
+          <!-- Community -->
+          <div class="bg-white shadow-md rounded-md p-6 text-left">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="bg-blue-900 text-white rounded-full p-1.5">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2"
+                     viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 4v16m8-8H4" />
+                </svg>
+              </div>
+              <h3 class="font-semibold text-lg text-gray-900">Community</h3>
+            </div>
+            <p class="text-gray-700">
+              For us, the community is important and we value the community from which our users come and that is why we want
+              to offer them staff from their community who can offer them a care service at their home according to their needs
+              and wishes.
+            </p>
+          </div>
+
+          <div class="bg-white shadow-md rounded-md p-6 text-left">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="bg-blue-900 text-white rounded-full p-1.5">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2"
+                     viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 4v16m8-8H4" />
+                </svg>
+              </div>
+              <h3 class="font-semibold text-lg text-gray-900">Stability</h3>
+            </div>
+            <p class="text-gray-700">
+                We want to promote stability and therefore we want our staff to feel stable in our company. Stability is essential when we apply work practices to our staff and our service users. We are committed to maintaining effective communication with all service users, staff and partners/suppliers of our services.
+            </p>
+          </div>
+          <div class="bg-white shadow-md rounded-md p-6 text-left">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="bg-blue-900 text-white rounded-full p-1.5">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2"
+                     viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 4v16m8-8H4" />
+                </svg>
+              </div>
+              <h3 class="font-semibold text-lg text-gray-900">Compassion</h3>
+            </div>
+            <p class="text-gray-700">
+                Compassion towards service users and colleagues is essential in our services and interactions with our staff. It is a driving force to have a successful service delivery. In order to achieve the success of the company, it is essential that our staff show compassion towards service users.
+            </p>
+          </div>
+          <div class="bg-white shadow-md rounded-md p-6 text-left">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="bg-blue-900 text-white rounded-full p-1.5">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2"
+                     viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 4v16m8-8H4" />
+                </svg>
+              </div>
+              <h3 class="font-semibold text-lg text-gray-900">
+                Pasion</h3>
+            </div>
+            <p class="text-gray-700">
+                When we offer our services to our service users, we do it with passion because passion is the basis of our company and our staff is led by the same passion that helps them offer a superior and quality service to our service users.
+            </p>
+          </div>
+          <div class="bg-white shadow-md rounded-md p-6 text-left">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="bg-blue-900 text-white rounded-full p-1.5">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2"
+                     viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 4v16m8-8H4" />
+                </svg>
+              </div>
+              <h3 class="font-semibold text-lg text-gray-900">Trust</h3>
+            </div>
+            <p class="text-gray-700">We want to develop a relationship based on trust with all service users, staff, health and social care professionals, commissioners and social services. We want to be honest, transparent in all the relationships we want to build so we can deliver value in what we do for service users, contributors and families.
+            </p>
+          </div>
+        </div>
+      </section>
+      
+      <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto ">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Our Aims</h2>
+                <p class="text-xl font-semibold text-[#7AE2CF] mb-8">Best Home Care Center with Love</p>
+                
+                <div class="text-left space-y-8">
+                    <p class="text-lg">
+                        We aim to be an outstanding care provider in the London Borough of Redbridge, Newham, Havering, 
+                        District Council of Essex, and all other London Boroughs providing our clients with first class care, 
+                        using every means available, to achieve the best possible outcomes for them.
+                    </p>
+                    
+                    <p class="text-lg">
+                        At Get A Care Ltd the primary aims of our service are to offer consistent, person centred care for all 
+                        service users in their individual house within an environment that encourages mutual respect, consideration 
+                        for others, choice, independence, dignity, autonomy, individuality and trust.
+                    </p>
+                </div>
+            </div>  
+            </div>
+            </section>  
+      <section class="px-4 py-12 md:px-16 bg-white">
+        <h4 class="text-center text-blue-900 font-semibold text-lg mb-8">Our Objectives</h4>
+        <h2 class="text-center text-xl md:text-2xl font-bold text-gray-900 mb-8">
+          The objectives of Get A Care Ltd are to enable service users to enjoy a high quality of life by respecting six basic values:
+          <br>
+          <span class="text-blue-900 mb-10">Privacy, Independence, Rights, Dignity, Choice, Fulfilment, Security.</span>
+        </h2>
+      
+        <div class="max-w-4xl mx-auto space-y-5">
+          <div class="flex items-start gap-4">
+            <img src="https://img.icons8.com/fluency/48/under-computer.png" alt="Understanding Icon" class="w-6 h-6 mt-1">
+            <p>This is achieved by ensuring that all service users understand the concepts of:</p>
+          </div>
+          <div class="flex items-start gap-4">
+            <img src="https://img.icons8.com/fluency/48/privacy.png" alt="Privacy Icon" class="w-6 h-6 mt-1">
+            <p>Privacy and dignity and the ability to live in their own home whilst actively taking part in the services and facilities that is available to them.</p>
+          </div>
+          <div class="flex items-start gap-4">
+            <img src="https://img.icons8.com/fluency/48/decision.png" alt="Decision Icon" class="w-6 h-6 mt-1">
+            <p>To enable the service users to make choices and decisions about their own future.</p>
+          </div>
+          <div class="flex items-start gap-4">
+            <img src="https://img.icons8.com/fluency/48/training.png" alt="Training Icon" class="w-6 h-6 mt-1">
+            <p>To provide support and opportunities that will enable the service users to learn and develop their own skills.</p>
+          </div>
+          <div class="flex items-start gap-4">
+            <img src="https://img.icons8.com/fluency/48/handshake.png" alt="Respect Icon" class="w-6 h-6 mt-1">
+            <p>To encourage the service users to have self-respect and to respect others including our staff.</p>
+          </div>
+          <div class="flex items-start gap-4">
+            <img src="https://img.icons8.com/fluency/48/group-foreground-selected.png" alt="Relationship Icon" class="w-6 h-6 mt-1">
+            <p>To enable the service users to develop valued relationships with staff and members of the community.</p>
+          </div>
+        </div>
+      </section>
+      
+      
+
+ 
+      <section class="px-4 py-16 md:px-16 bg-gray-50 text-center">
+        <a href="#appointment" class="inline-block bg-blue-900 text-white px-6 py-2 rounded-full mb-12 font-medium hover:bg-blue-800 transition">
+          Get Appointment
+        </a>
+      
+        <h4 class="text-blue-900 font-semibold text-lg mb-2">Testimonials</h4>
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-10">
+          What Our Clients Say About get A care
+        </h2>
+      
+        <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <div class="bg-amber-50 p-6 rounded-xl shadow-sm text-left">
+            <h3 class="font-semibold text-lg mb-2">Mr John</h3>
+            <p>'Get a Care' has become an integral part of our support system, providing peace of mind knowing that our loved one is in capable and caring hands. I wholeheartedly recommend 'Get a Care'.
+                <br>
+                05/01/2024
+            </p>
+          </div>
+          <div class="bg-amber-50 p-6 rounded-xl shadow-sm text-left">
+            <h3 class="font-semibold text-lg mb-2">Mrs Emily</h3>
+            <p>Choosing 'Get a Care' was the best decision for my family. Their attentive team delivers exceptional care, ensuring our loved one’s well-being and independence. I wholeheartedly recommend 'Get a Care'<div class="br">
+                05/01/2024</div></p>
+          </div>
+          <div class="bg-amber-50 p-6 rounded-xl shadow-sm text-left">
+            <h3 class="font-semibold text-lg mb-2">Ms Asha</h3>
+            <p>Choosing 'Get a Care' has been an absolute game-changer for our family, profoundly impacting our lives by ensuring the well-being and comfort of our loved one with their <br>
+                05/01/2024</p>
+          </div>
+        </div>
+      </section>
+      
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-[#7AE2CF] text-xl font-bold mb-4">About Us</h3>
+                    <p class="mb-4">Get A Care provides exceptional home care services with compassion, dignity, and respect for our clients and their families.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-[#7AE2CF] transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white hover:text-[#7AE2CF] transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white hover:text-[#7AE2CF] transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white hover:text-[#7AE2CF] transition"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-[#7AE2CF] text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-[#7AE2CF] transition">Home</a></li>
+                        <li><a href="#" class="hover:text-[#7AE2CF] transition">Services</a></li>
+                        <li><a href="#" class="hover:text-[#7AE2CF] transition">About Us</a></li>
+                        <li><a href="#" class="hover:text-[#7AE2CF] transition">Testimonials</a></li>
+                        <li><a href="#" class="hover:text-[#7AE2CF] transition">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-[#7AE2CF] text-xl font-bold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-[#7AE2CF] transition">Personal Care</a></li>
+                        <li><a href="#" class="hover:text-[#7AE2CF] transition">Companionship</a></li>
+                        <li><a href="#" class="hover:text-[#7AE2CF] transition">Medication Management</a></li>
+                        <li><a href="#" class="hover:text-[#7AE2CF] transition">Respite Care</a></li>
+                        <li><a href="#" class="hover:text-[#7AE2CF] transition">Specialized Care</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-[#7AE2CF] text-xl font-bold mb-4">Contact Us</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-[#7AE2CF]"></i>
+                            <span>123 Care Street, City</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-[#7AE2CF]"></i>
+                            <span>(123) 456-7890</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-[#7AE2CF]"></i>
+                            <span>info@getacare.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p>&copy; 2024 Get A Care Ltd. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        hamburger.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            hamburger.innerHTML = mobileMenu.classList.contains('hidden') ? 
+                '<i class="fas fa-bars"></i>' : '<i class="fas fa-times"></i>';
+        });
+
+        // Carousel Functionality
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-slide');
+        const indicators = document.querySelectorAll('.carousel-indicator');
+        const totalSlides = slides.length;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.style.opacity = i === index ? '1' : '0';
+            });
+            indicators.forEach((indicator, i) => {
+                indicator.classList.toggle('bg-opacity-100', i === index);
+                indicator.classList.toggle('bg-opacity-50', i !== index);
+            });
+            currentSlide = index;
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            showSlide(currentSlide);
+        }
+
+        // Set up event listeners
+        document.querySelector('.carousel-next').addEventListener('click', nextSlide);
+        document.querySelector('.carousel-prev').addEventListener('click', prevSlide);
+        
+        indicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', () => showSlide(index));
+        });
+
+        // Auto-advance slides every 5 seconds
+        setInterval(nextSlide, 5000);
+
+        // Initialize first slide
+        showSlide(0);
+    </script>
+</body>
+</html>
