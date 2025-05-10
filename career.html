@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers - Get A Care</title>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Libre Baskerville', serif;
+        }
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Navbar -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="text-3xl font-bold text-[#7AE2CF]">
+                Get<span class="text-gray-800">A Care</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="./index.html" class="font-bold text-gray-800 hover:text-[#7AE2CF] transition">Home</a>
+                <a href="./service.html" class="font-bold text-gray-800 hover:text-[#7AE2CF] transition">Services</a>
+                <a href="./about.html" class="font-bold text-gray-800 hover:text-[#7AE2CF] transition">About Us</a>
+                <a href="./career.html" class="font-bold text-[#7AE2CF] transition">Career</a>
+                <a href="team.html" class="font-bold text-gray-800 hover:text-[#7AE2CF] transition">Our Team</a>
+                <a href="enquire.html" class="font-bold text-gray-800 hover:text-[#7AE2CF] transition">Enquire Now</a>
+                <a href="contact.html" class="bg-[#7AE2CF] text-white px-6 py-2 rounded-full font-bold hover:bg-[#5ec9b6] transition">Contact Us</a>
+            </div>
+            <button id="hamburger" class="md:hidden text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white w-full absolute left-0 top-full shadow-lg">
+            <div class="container mx-auto px-4 py-4 flex flex-col space-y-4">
+                <a href="index.html" class="font-bold text-gray-800 hover:text-[#7AE2CF] transition py-2">Home</a>
+                <a href="services.html" class="font-bold text-gray-800 hover:text-[#7AE2CF] transition py-2">Services</a>
+                <a href="about.html" class="font-bold text-gray-800 hover:text-[#7AE2CF] transition py-2">About Us</a>
+                <a href="career.html" class="font-bold text-[#7AE2CF] transition py-2">Career</a>
+                <a href="team.html" class="font-bold text-gray-800 hover:text-[#7AE2CF] transition py-2">Our Team</a>
+                <a href="enquire.html" class="font-bold text-gray-800 hover:text-[#7AE2CF] transition py-2">Enquire Now</a>
+                <a href="contact.html" class="bg-[#7AE2CF] text-white px-6 py-2 rounded-full font-bold hover:bg-[#5ec9b6] transition text-center">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Career Hero -->
+    <section class="pt-32 pb-20 bg-[#7AE2CF] text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Build a Rewarding Career in Care</h1>
+            <p class="text-xl max-w-3xl mx-auto">Join our team of compassionate professionals making a real difference in people's lives every day.</p>
+        </div>
+    </section>
+
+    <!-- Why Join Us -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Why Join Get A Care?</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">We value our team members and offer an exceptional working environment</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Benefit 1 -->
+                <div class="benefit-card bg-gray-50 p-8 rounded-lg shadow-md transition duration-300">
+                    <div class="text-[#7AE2CF] text-4xl mb-4">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Meaningful Work</h3>
+                    <p>Make a genuine difference in people's lives through compassionate, person-centered care.</p>
+                </div>
+
+                <!-- Benefit 2 -->
+                <div class="benefit-card bg-gray-50 p-8 rounded-lg shadow-md transition duration-300">
+                    <div class="text-[#7AE2CF] text-4xl mb-4">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Training & Development</h3>
+                    <p>Comprehensive training programs and opportunities for career progression.</p>
+                </div>
+
+                <!-- Benefit 3 -->
+                <div class="benefit-card bg-gray-50 p-8 rounded-lg shadow-md transition duration-300">
+                    <div class="text-[#7AE2CF] text-4xl mb-4">
+                        <i class="fas fa-pound-sign"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Competitive Pay</h3>
+                    <p>Attractive salaries, paid travel time, and holiday pay above industry standards.</p>
+                </div>
+
+                <!-- Benefit 4 -->
+                <div class="benefit-card bg-gray-50 p-8 rounded-lg shadow-md transition duration-300">
+                    <div class="text-[#7AE2CF] text-4xl mb-4">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Flexible Hours</h3>
+                    <p>Work patterns to suit your lifestyle with full-time and part-time options.</p>
+                </div>
+
+                <!-- Benefit 5 -->
+                <div class="benefit-card bg-gray-50 p-8 rounded-lg shadow-md transition duration-300">
+                    <div class="text-[#7AE2CF] text-4xl mb-4">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Wellbeing Support</h3>
+                    <p>Employee assistance program and regular wellbeing check-ins.</p>
+                </div>
+
+                <!-- Benefit 6 -->
+                <div class="benefit-card bg-gray-50 p-8 rounded-lg shadow-md transition duration-300">
+                    <div class="text-[#7AE2CF] text-4xl mb-4">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Team Community</h3>
+                    <p>Regular team events and a supportive community of care professionals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Current Openings -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Current Opportunities</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Join our growing team of care professionals</p>
+            </div>
+
+            <div class="max-w-4xl mx-auto space-y-6">
+                <!-- Job 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-center">
+                        <div>
+                            <h3 class="text-xl font-bold">Care Assistant</h3>
+                            <p class="text-[#7AE2CF] font-semibold">Full-time & Part-time | London & Essex</p>
+                        </div>
+                        <a href="#apply" class="mt-4 md:mt-0 bg-[#7AE2CF] hover:bg-[#5ec9b6] text-white px-6 py-2 rounded-full font-bold transition inline-block">Apply Now</a>
+                    </div>
+                    <div class="mt-4">
+                        <p class="mb-3">We're looking for compassionate individuals to provide personal care and support to clients in their own homes.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">£11.50-£13.50/hour</span>
+                            <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Flexible shifts</span>
+                            <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Mileage paid</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Job 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-center">
+                        <div>
+                            <h3 class="text-xl font-bold">Senior Care Assistant</h3>
+                            <p class="text-[#7AE2CF] font-semibold">Full-time | Redbridge & Newham</p>
+                        </div>
+                        <a href="#apply" class="mt-4 md:mt-0 bg-[#7AE2CF] hover:bg-[#5ec9b6] text-white px-6 py-2 rounded-full font-bold transition inline-block">Apply Now</a>
+                    </div>
+                    <div class="mt-4">
+                        <p class="mb-3">Lead a team of care assistants, provide complex care, and mentor new staff members.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">£14.00-£16.00/hour</span>
+                            <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Supervisory experience</span>
+                            <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">NVQ Level 3 required</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Job 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-center">
+                        <div>
+                            <h3 class="text-xl font-bold">Dementia Care Specialist</h3>
+                            <p class="text-[#7AE2CF] font-semibold">Part-time | Havering & Essex</p>
+                        </div>
+                        <a href="#apply" class="mt-4 md:mt-0 bg-[#7AE2CF] hover:bg-[#5ec9b6] text-white px-6 py-2 rounded-full font-bold transition inline-block">Apply Now</a>
+                    </div>
+                    <div class="mt-4">
+                        <p class="mb-3">Specialize in providing exceptional care for clients living with dementia and memory conditions.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">£12.50-£14.50/hour</span>
+                            <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Dementia training</span>
+                            <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Weekend availability</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Job 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-center">
+                        <div>
+                            <h3 class="text-xl font-bold">Care Coordinator</h3>
+                            <p class="text-[#7AE2CF] font-semibold">Full-time | Office-based (Redbridge)</p>
+                        </div>
+                        <a href="#apply" class="mt-4 md:mt-0 bg-[#7AE2CF] hover:bg-[#5ec9b6] text-white px-6 py-2 rounded-full font-bold transition inline-block">Apply Now</a>
+                    </div>
+                    <div class="mt-4">
+                        <p class="mb-3">Coordinate care schedules, liaise with clients and families, and support our care team.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">£24,000-£26,000/year</span>
+                            <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Monday-Friday</span>
+                            <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Care experience</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <p class="mb-6">Don't see the perfect role? We're always interested in hearing from talented care professionals.</p>
+                <a href="contact.html" class="bg-[#7AE2CF] hover:bg-[#5ec9b6] text-white px-8 py-3 rounded-full font-bold inline-block transition">Send Us Your CV</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Form -->
+    <section id="apply" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto bg-gray-50 p-8 rounded-lg shadow-md">
+                <h2 class="text-3xl font-bold mb-2 text-center">Apply Now</h2>
+                <p class="text-center mb-8">Complete the form below and we'll be in touch within 2 working days</p>
+                
+                <form class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="first-name" class="block font-medium mb-1">First Name *</label>
+                            <input type="text" id="first-name" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#7AE2CF]">
+                        </div>
+                        <div>
+                            <label for="last-name" class="block font-medium mb-1">Last Name *</label>
+                            <input type="text" id="last-name" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#7AE2CF]">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="email" class="block font-medium mb-1">Email *</label>
+                            <input type="email" id="email" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#7AE2CF]">
+                        </div>
+                        <div>
+                            <label for="phone" class="block font-medium mb-1">Phone *</label>
+                            <input type="tel" id="phone" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#7AE2CF]">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="position" class="block font-medium mb-1">Position Applying For *</label>
+                        <select id="position" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#7AE2CF]">
+                            <option value="">Select a position</option>
+                            <option value="Care Assistant">Care Assistant</option>
+                            <option value="Senior Care Assistant">Senior Care Assistant</option>
+                            <option value="Dementia Care Specialist">Dementia Care Specialist</option>
+                            <option value="Care Coordinator">Care Coordinator</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="experience" class="block font-medium mb-1">Relevant Experience *</label>
+                        <textarea id="experience" rows="4" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#7AE2CF]"></textarea>
+                    </div>
+
+                    <div>
+                        <label for="cv" class="block font-medium mb-1">Upload CV (PDF or Word) *</label>
+                        <input type="file" id="cv" accept=".pdf,.doc,.docx" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#7AE2CF]">
+                    </div>
+
+                    <div class="flex items-start">
+                        <input type="checkbox" id="consent" required class="mt-1 mr-2">
+                        <label for="consent" class="text-sm">I consent to Get A Care Ltd processing my personal data in accordance with the privacy policy. *</label>
+                    </div>
+
+                    <button type="submit" class="w-full bg-[#7AE2CF] hover:bg-[#5ec9b6] text-white font-bold py-3 px-4 rounded-full transition">
+                        Submit Application
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training & Development -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                         alt="Training session" 
+                         class="rounded-lg shadow-xl w-full h-auto">
+                </div>
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Training & Development</h2>
+                    <p class="text-lg mb-4">
+                        We invest in our team's continuous professional development with comprehensive training programs:
+                    </p>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-[#7AE2CF] mt-1 mr-2"></i>
+                            <span>Mandatory induction training for all new staff</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-[#7AE2CF] mt-1 mr-2"></i>
+                            <span>Specialist courses in dementia, palliative care, and more</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-[#7AE2CF] mt-1 mr-2"></i>
+                            <span>NVQ/QCF qualifications funded for eligible staff</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-[#7AE2CF] mt-1 mr-2"></i>
+                            <span>Regular refresher training and workshops</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-[#7AE2CF] mt-1 mr-2"></i>
+                            <span>Leadership development for senior roles</span>
+                        </li>
+                    </ul>
+                    <p class="text-lg">
+                        Our training ensures you're fully equipped to provide the highest standard of care while developing your skills and career.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-[#7AE2CF] text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Start Your Care Career?</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">Join a team that values your compassion and dedication.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#apply" class="bg-white text-[#7AE2CF] px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition">Apply Now</a>
+                <a href="contact.html" class="bg-transparent border-2 border-white px-8 py-3 rounded-full font-bold hover:bg-white hover:text-[#7AE2CF] transition">Contact Our Team</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-[#7AE2CF] text-xl font-bold mb-4">About Us</h3>
+                    <p class="mb-4">Get A Care provides exceptional home care services with compassion, dignity, and respect for our clients and their families.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-[#7AE2CF] transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white hover:text-[#7AE2CF] transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white hover:text-[#7AE2CF] transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white hover:text-[#7AE2CF] transition"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-[#7AE2CF] text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-[#7AE2CF] transition">Home</a></li>
+                        <li><a href="services.html" class="hover:text-[#7AE2CF] transition">Services</a></li>
+                        <li><a href="about.html" class="hover:text-[#7AE2CF] transition">About Us</a></li>
+                        <li><a href="career.html" class="hover:text-[#7AE2CF] transition">Career</a></li>
+                        <li><a href="contact.html" class="hover:text-[#7AE2CF] transition">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-[#7AE2CF] text-xl font-bold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-[#7AE2CF] transition">Personal Care</a></li>
+                        <li><a href="#" class="hover:text-[#7AE2CF] transition">Companionship</a></li>
+                        <li><a href="#" class="hover:text-[#7AE2CF] transition">Medication Management</a></li>
+                        <li><a href="#" class="hover:text-[#7AE2CF] transition">Respite Care</a></li>
+                        <li><a href="#" class="hover:text-[#7AE2CF] transition">Specialized Care</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-[#7AE2CF] text-xl font-bold mb-4">Contact Us</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-[#7AE2CF]"></i>
+                            <span>123 Care Street, City</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-[#7AE2CF]"></i>
+                            <span>(123) 456-7890</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-[#7AE2CF]"></i>
+                            <span>careers@getacare.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p>&copy; 2024 Get A Care Ltd. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        hamburger.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            hamburger.innerHTML = mobileMenu.classList.contains('hidden') ? 
+                '<i class="fas fa-bars"></i>' : '<i class="fas fa-times"></i>';
+        });
+    </script>
+</body>
+</html>
