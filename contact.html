@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Get A Care</title>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Libre Baskerville', serif;
+        }
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .form-input:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px #7AE2CF;
+            border-color: #7AE2CF;
+        }
+        iframe {
+            filter: grayscale(1) contrast(1.2) opacity(0.9);
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Navbar -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="text-3xl font-bold text-[#7AE2CF]">
+                Get<span class="text-gray-800">A Care</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="./index.html" class="font-bold text-gray-800 hover:text-[#7AE2CF] transition">Home</a>
+                <a href="./services.html" class="font-bold text-gray-800 hover:text-[#7AE2CF] transition">Services</a>
+                <a href="./about.html" class="font-bold text-gray-800 hover:text-[#7AE2CF] transition">About Us</a>
+                <a href="./career.html" class="font-bold text-gray-800 hover:text-[#7AE2CF] transition">Career</a>
+                <a href="./team.html" class="font-bold text-gray-800 hover:text-[#7AE2CF] transition">Our Team</a>
+                <a href="./enquire.html" class="font-bold text-gray-800 hover:text-[#7AE2CF] transition">Enquire Now</a>
+                <a href="./contact.html" class="bg-[#7AE2CF] text-white px-6 py-2 rounded-full font-bold hover:bg-[#5ec9b6] transition">Contact Us</a>
+            </div>
+            <button id="hamburger" class="md:hidden text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white w-full absolute left-0 top-full shadow-lg">
+            <div class="container mx-auto px-4 py-4 flex flex-col space-y-4">
+                <a href="./index.html" class="font-bold text-gray-800 hover:text-[#7AE2CF] transition py-2">Home</a>
+                <a href="./services.html" class="font-bold text-gray-800 hover:text-[#7AE2CF] transition py-2">Services</a>
+                <a href="./about.html" class="font-bold text-gray-800 hover:text-[#7AE2CF] transition py-2">About Us</a>
+                <a href="./career.html" class="font-bold text-gray-800 hover:text-[#7AE2CF] transition py-2">Career</a>
+                <a href="./team.html" class="font-bold text-gray-800 hover:text-[#7AE2CF] transition py-2">Our Team</a>
+                <a href="./enquire.html" class="font-bold text-gray-800 hover:text-[#7AE2CF] transition py-2">Enquire Now</a>
+                <a href="./contact.html" class="bg-[#7AE2CF] text-white px-6 py-2 rounded-full font-bold hover:bg-[#5ec9b6] transition text-center">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="pt-32 pb-20 bg-[#7AE2CF] text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Contact Get A Care</h1>
+            <p class="text-xl max-w-3xl mx-auto">We're here to answer your questions and discuss how we can support you or your loved one.</p>
+        </div>
+    </section>
+
+    <!-- Contact Methods -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Phone -->
+                <div class="contact-card bg-gray-50 p-8 rounded-lg shadow-md transition duration-300 text-center">
+                    <div class="text-[#7AE2CF] text-4xl mb-4">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Call Us</h3>
+                    <p class="mb-4">Speak directly with our care team during office hours</p>
+                    <a href="tel:+1234567890" class="text-xl font-semibold text-[#7AE2CF] hover:underline">(123) 456-7890</a>
+                    <div class="mt-4 text-sm text-gray-600">
+                        <p>Mon-Fri: 8am-6pm</p>
+                        <p>Sat: 9am-2pm</p>
+                    </div>
+                </div>
+
+                <!-- Email -->
+                <div class="contact-card bg-gray-50 p-8 rounded-lg shadow-md transition duration-300 text-center">
+                    <div class="text-[#7AE2CF] text-4xl mb-4">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Email Us</h3>
+                    <p class="mb-4">Send us a message and we'll respond within 24 hours</p>
+                    <a href="mailto:info@getacare.com" class="text-xl font-semibold text-[#7AE2CF] hover:underline">info@getacare.com</a>
+                    <div class="mt-4 text-sm text-gray-600">
+                        <p>For general enquiries</p>
+                        <p>For careers: careers@getacare.com</p>
+                    </div>
+                </div>
+
+                <!-- Visit -->
+                <div class="contact-card bg-gray-50 p-8 rounded-lg shadow-md transition duration-300 text-center">
+                    <div class="text-[#7AE2CF] text-4xl mb-4">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Visit Us</h3>
+                    <p class="mb-4">Schedule an appointment at our office</p>
+                    <p class="font-semibold">123 Care Street, City</p>
+                    <p class="text-sm">London, Postcode</p>
+                    <div class="mt-4 text-sm text-gray-600">
+                        <p>By appointment only</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form & Map -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row gap-12">
+                <!-- Contact Form -->
+                <div class="lg:w-1/2">
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <h2 class="text-3xl font-bold mb-6">Send Us a Message</h2>
+                        <form class="space-y-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="contact-name" class="block font-medium mb-1">Name *</label>
+                                    <input type="text" id="contact-name" required 
+                                           class="form-input w-full px-4 py-3 border rounded-lg focus:outline-none transition">
+                                </div>
+                                <div>
+                                    <label for="contact-email" class="block font-medium mb-1">Email *</label>
+                                    <input type="email" id="contact-email" required 
+                                           class="form-input w-full px-4 py-3 border rounded-lg focus:outline-none transition">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="contact-phone" class="block font-medium mb-1">Phone</label>
+                                <input type="tel" id="contact-phone" 
+                                       class="form-input w-full px-4 py-3 border rounded-lg focus:outline-none transition">
+                            </div>
+
+                            <div>
+                                <label for="contact-subject" class="block font-medium mb-1">Subject *</label>
+                                <select id="contact-subject" required 
+                                        class="form-input w-full px-4 py-3 border rounded-lg focus:outline-none transition">
+                                    <option value="">Select a subject</option>
+                                    <option value="care-enquiry">Care Services Enquiry</option>
+                                    <option value="career">Career Opportunity</option>
+                                    <option value="feedback">Feedback</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="contact-message" class="block font-medium mb-1">Message *</label>
+                                <textarea id="contact-message" rows="5" required 
+                                          class="form-input w-full px-4 py-3 border rounded-lg focus:outline-none transition"></textarea>
+                            </div>
+
+                            <div class="flex items-start">
+                                <input type="checkbox" id="contact-consent" required class="mt-1 mr-3">
+                                <label for="contact-consent" class="text-sm">I consent to Get A Care Ltd processing my personal data in accordance with the <a href="#" class="text-[#7AE2CF] hover:underline">privacy policy</a>. *</label>
+                            </div>
+
+                            <button type="submit" class="w-full bg-[#7AE2CF] hover:bg-[#5ec9b6] text-white font-bold py-4 px-6 rounded-full transition">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Map & Address -->
+                <div class="lg:w-1/2">
+                    <div class="h-full bg-white rounded-lg shadow-md overflow-hidden">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.541598110696!2d-0.127758323584686!3d51.52341531587651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b323093d307%3A0x2fb199016d5642a7!2s123%20Care%20St%2C%20London!5e0!3m2!1sen!2suk!4v1620000000000!5m2!1sen!2suk" 
+                                width="100%" 
+                                height="100%" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy"
+                                class="min-h-[400px] lg:min-h-full"></iframe>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Contact -->
+    <section class="py-16 bg-[#7AE2CF] text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Need Urgent Assistance?</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">For emergency care needs outside office hours, please call our 24/7 emergency line</p>
+            <div class="flex justify-center">
+                <a href="tel:+1234567890" class="bg-white text-[#7AE2CF] px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition text-lg">
+                    <i class="fas fa-phone-alt mr-2"></i> Emergency: (123) 456-7890
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Contact FAQs</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Answers to common questions about getting in touch</p>
+            </div>
+
+            <div class="max-w-3xl mx-auto space-y-6">
+                <!-- FAQ 1 -->
+                <div class="border rounded-lg overflow-hidden">
+                    <button class="faq-toggle w-full text-left p-6 bg-gray-50 hover:bg-gray-100 transition font-semibold flex justify-between items-center">
+                        <span>What's the best way to reach you for a new care enquiry?</span>
+                        <i class="fas fa-chevron-down transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden p-6 border-t">
+                        <p>For new care enquiries, we recommend either calling our main office number during business hours or using our <a href="enquire.html" class="text-[#7AE2CF] hover:underline">online enquiry form</a> which goes directly to our care coordination team. This ensures we can respond to your specific needs most effectively.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="border rounded-lg overflow-hidden">
+                    <button class="faq-toggle w-full text-left p-6 bg-gray-50 hover:bg-gray-100 transition font-semibold flex justify-between items-center">
+                        <span>How quickly can I expect a response to my email?</span>
+                        <i class="fas fa-chevron-down transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden p-6 border-t">
+                        <p>We aim to respond to all emails within 24 hours during our business days (Monday-Friday). If your enquiry is urgent, please call us directly for a faster response.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="border rounded-lg overflow-hidden">
+                    <button class="faq-toggle w-full text-left p-6 bg-gray-50 hover:bg-gray-100 transition font-semibold flex justify-between items-center">
+                        <span>Do you have different contact details for careers enquiries?</span>
+                        <i class="fas fa-chevron-down transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden p-6 border-t">
+                        <p>Yes, for careers or employment enquiries, please email <a href="mailto:careers@getacare.com" class="text-[#7AE2CF] hover:underline">careers@getacare.com</a> or visit our <a href="career.html" class="text-[#7AE2CF] hover:underline">Careers page</a> for more information about current opportunities.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="border rounded-lg overflow-hidden">
+                    <button class="faq-toggle w-full text-left p-6 bg-gray-50 hover:bg-gray-100 transition font-semibold flex justify-between items-center">
+                        <span>Can I visit your office without an appointment?</span>
+                        <i class="fas fa-chevron-down transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden p-6 border-t">
+                        <p>To ensure we can give you our full attention, all office visits require an appointment. Please call or email us to schedule a meeting at a time that's convenient for you.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-[#7AE2CF] text-xl font-bold mb-4">About Us</h3>
+                    <p class="mb-4">Get A Care provides exceptional home care services with compassion, dignity, and respect for our clients and their families.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-[#7AE2CF] transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white hover:text-[#7AE2CF] transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white hover:text-[#7AE2CF] transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white hover:text-[#7AE2CF] transition"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-[#7AE2CF] text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-[#7AE2CF] transition">Home</a></li>
+                        <li><a href="services.html" class="hover:text-[#7AE2CF] transition">Services</a></li>
+                        <li><a href="about.html" class="hover:text-[#7AE2CF] transition">About Us</a></li>
+                        <li><a href="team.html" class="hover:text-[#7AE2CF] transition">Our Team</a></li>
+                        <li><a href="contact.html" class="hover:text-[#7AE2CF] transition">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-[#7AE2CF] text-xl font-bold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-[#7AE2CF] transition">Personal Care</a></li>
+                        <li><a href="#" class="hover:text-[#7AE2CF] transition">Companionship</a></li>
+                        <li><a href="#" class="hover:text-[#7AE2CF] transition">Medication Management</a></li>
+                        <li><a href="#" class="hover:text-[#7AE2CF] transition">Respite Care</a></li>
+                        <li><a href="#" class="hover:text-[#7AE2CF] transition">Specialized Care</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-[#7AE2CF] text-xl font-bold mb-4">Contact Us</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-[#7AE2CF]"></i>
+                            <span>123 Care Street, City</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-[#7AE2CF]"></i>
+                            <span>(123) 456-7890</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-[#7AE2CF]"></i>
+                            <span>info@getacare.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p>&copy; 2025 Get A Care Ltd. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        hamburger.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            hamburger.innerHTML = mobileMenu.classList.contains('hidden') ? 
+                '<i class="fas fa-bars"></i>' : '<i class="fas fa-times"></i>';
+        });
+
+        // FAQ Toggle
+        const faqToggles = document.querySelectorAll('.faq-toggle');
+        faqToggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const content = toggle.nextElementSibling;
+                const icon = toggle.querySelector('i');
+                
+                content.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquire Now - Get A Care</title>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Libre Baskerville', serif;
+        }
+        .form-input:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px #7AE2CF;
+            border-color: #7AE2CF;
+        }
+        .service-option:hover {
+            border-color: #7AE2CF;
+            background-color: #f0fdfa;
+        }
+        .service-option.selected {
+            border-color: #7AE2CF;
+            background-color: #f0fdfa;
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Navbar -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="text-3xl font-bold text-[#7AE2CF]">
+                Get<span class="text-gray-800">A Care</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="./index.html" class="font-bold text-gray-800 hover:text-[#7AE2CF] transition">Home</a>
+                <a href="./services.html" class="font-bold text-gray-800 hover:text-[#7AE2CF] transition">Services</a>
+                <a href="./about.html" class="font-bold text-gray-800 hover:text-[#7AE2CF] transition">About Us</a>
+                <a href="./career.html" class="font-bold text-gray-800 hover:text-[#7AE2CF] transition">Career</a>
+                <a href="./team.html" class="font-bold text-gray-800 hover:text-[#7AE2CF] transition">Our Team</a>
+                <a href="./enquire.html" class="font-bold text-[#7AE2CF] transition">Enquire Now</a>
+                <a href="./contact.html" class="bg-[#7AE2CF] text-white px-6 py-2 rounded-full font-bold hover:bg-[#5ec9b6] transition">Contact Us</a>
+            </div>
+            <button id="hamburger" class="md:hidden text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white w-full absolute left-0 top-full shadow-lg">
+            <div class="container mx-auto px-4 py-4 flex flex-col space-y-4">
+                <a href="./index.html" class="font-bold text-gray-800 hover:text-[#7AE2CF] transition py-2">Home</a>
+                <a href="./services.html" class="font-bold text-gray-800 hover:text-[#7AE2CF] transition py-2">Services</a>
+                <a href="./about.html" class="font-bold text-gray-800 hover:text-[#7AE2CF] transition py-2">About Us</a>
+                <a href="./career.html" class="font-bold text-gray-800 hover:text-[#7AE2CF] transition py-2">Career</a>
+                <a href="./team.html" class="font-bold text-gray-800 hover:text-[#7AE2CF] transition py-2">Our Team</a>
+                <a href="./enquire.html" class="font-bold text-[#7AE2CF] transition py-2">Enquire Now</a>
+                <a href="./contact.html" class="bg-[#7AE2CF] text-white px-6 py-2 rounded-full font-bold hover:bg-[#5ec9b6] transition text-center">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Enquire Hero -->
+    <section class="pt-32 pb-20 bg-[#7AE2CF] text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Enquire About Our Care Services</h1>
+            <p class="text-xl max-w-3xl mx-auto">Complete the form below and our team will contact you within 24 hours to discuss your care needs.</p>
+        </div>
+    </section>
+
+    <!-- Enquiry Form -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto bg-gray-50 p-8 md:p-12 rounded-lg shadow-md">
+                <h2 class="text-3xl font-bold mb-2 text-center">Care Enquiry Form</h2>
+                <p class="text-center mb-8">Please provide as much detail as possible so we can best assist you</p>
+                
+                <form class="space-y-6">
+                    <!-- Personal Details -->
+                    <div class="space-y-6">
+                        <h3 class="text-xl font-semibold mb-4 text-[#7AE2CF] border-b pb-2">Personal Details</h3>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="first-name" class="block font-medium mb-1">First Name *</label>
+                                <input type="text" id="first-name" required 
+                                       class="form-input w-full px-4 py-3 border rounded-lg focus:outline-none transition">
+                            </div>
+                            <div>
+                                <label for="last-name" class="block font-medium mb-1">Last Name *</label>
+                                <input type="text" id="last-name" required 
+                                       class="form-input w-full px-4 py-3 border rounded-lg focus:outline-none transition">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="email" class="block font-medium mb-1">Email *</label>
+                                <input type="email" id="email" required 
+                                       class="form-input w-full px-4 py-3 border rounded-lg focus:outline-none transition">
+                            </div>
+                            <div>
+                                <label for="phone" class="block font-medium mb-1">Phone *</label>
+                                <input type="tel" id="phone" required 
+                                       class="form-input w-full px-4 py-3 border rounded-lg focus:outline-none transition">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="postcode" class="block font-medium mb-1">Postcode *</label>
+                            <input type="text" id="postcode" required 
+                                   class="form-input w-full px-4 py-3 border rounded-lg focus:outline-none transition">
+                        </div>
+                    </div>
+
+                    <!-- Service Selection -->
+                    <div class="space-y-6">
+                        <h3 class="text-xl font-semibold mb-4 text-[#7AE2CF] border-b pb-2">Service Information</h3>
+                        
+                        <div>
+                            <label class="block font-medium mb-3">What type of care are you enquiring about? *</label>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <label class="service-option border rounded-lg p-4 cursor-pointer transition">
+                                    <input type="radio" name="service-type" value="personal-care" class="hidden">
+                                    <div class="flex items-center">
+                                        <div class="border rounded-full w-5 h-5 flex items-center justify-center mr-3">
+                                            <div class="w-3 h-3 rounded-full bg-[#7AE2CF] hidden"></div>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold">Personal Care</h4>
+                                            <p class="text-sm text-gray-600">Assistance with daily living activities</p>
+                                        </div>
+                                    </div>
+                                </label>
+                                
+                                <label class="service-option border rounded-lg p-4 cursor-pointer transition">
+                                    <input type="radio" name="service-type" value="companionship" class="hidden">
+                                    <div class="flex items-center">
+                                        <div class="border rounded-full w-5 h-5 flex items-center justify-center mr-3">
+                                            <div class="w-3 h-3 rounded-full bg-[#7AE2CF] hidden"></div>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold">Companionship</h4>
+                                            <p class="text-sm text-gray-600">Social support and engagement</p>
+                                        </div>
+                                    </div>
+                                </label>
+                                
+                                <label class="service-option border rounded-lg p-4 cursor-pointer transition">
+                                    <input type="radio" name="service-type" value="dementia" class="hidden">
+                                    <div class="flex items-center">
+                                        <div class="border rounded-full w-5 h-5 flex items-center justify-center mr-3">
+                                            <div class="w-3 h-3 rounded-full bg-[#7AE2CF] hidden"></div>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold">Dementia Care</h4>
+                                            <p class="text-sm text-gray-600">Specialist memory care support</p>
+                                        </div>
+                                    </div>
+                                </label>
+                                
+                                <label class="service-option border rounded-lg p-4 cursor-pointer transition">
+                                    <input type="radio" name="service-type" value="respite" class="hidden">
+                                    <div class="flex items-center">
+                                        <div class="border rounded-full w-5 h-5 flex items-center justify-center mr-3">
+                                            <div class="w-3 h-3 rounded-full bg-[#7AE2CF] hidden"></div>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold">Respite Care</h4>
+                                            <p class="text-sm text-gray-600">Temporary care for family caregivers</p>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="care-needs" class="block font-medium mb-1">Tell us about the care needs *</label>
+                            <textarea id="care-needs" rows="4" required 
+                                      class="form-input w-full px-4 py-3 border rounded-lg focus:outline-none transition"></textarea>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="start-date" class="block font-medium mb-1">When would you like care to start?</label>
+                                <input type="date" id="start-date" 
+                                       class="form-input w-full px-4 py-3 border rounded-lg focus:outline-none transition">
+                            </div>
+                            <div>
+                                <label for="hours-needed" class="block font-medium mb-1">Estimated hours needed per week</label>
+                                <select id="hours-needed" class="form-input w-full px-4 py-3 border rounded-lg focus:outline-none transition">
+                                    <option value="">Select hours</option>
+                                    <option value="1-5">1-5 hours</option>
+                                    <option value="6-10">6-10 hours</option>
+                                    <option value="11-20">11-20 hours</option>
+                                    <option value="21-30">21-30 hours</option>
+                                    <option value="30+">30+ hours</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Additional Information -->
+                    <div class="space-y-6">
+                        <h3 class="text-xl font-semibold mb-4 text-[#7AE2CF] border-b pb-2">Additional Information</h3>
+                        
+                        <div>
+                            <label for="how-heard" class="block font-medium mb-1">How did you hear about us?</label>
+                            <select id="how-heard" class="form-input w-full px-4 py-3 border rounded-lg focus:outline-none transition">
+                                <option value="">Select option</option>
+                                <option value="search">Search Engine (Google, Bing)</option>
+                                <option value="social">Social Media</option>
+                                <option value="recommendation">Friend/Family Recommendation</option>
+                                <option value="healthcare">Healthcare Professional</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="additional-info" class="block font-medium mb-1">Any other information we should know?</label>
+                            <textarea id="additional-info" rows="3" 
+                                      class="form-input w-full px-4 py-3 border rounded-lg focus:outline-none transition"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Consent -->
+                    <div class="flex items-start">
+                        <input type="checkbox" id="privacy-consent" required class="mt-1 mr-3">
+                        <label for="privacy-consent" class="text-sm">I consent to Get A Care Ltd processing my personal data in accordance with the <a href="#" class="text-[#7AE2CF] hover:underline">privacy policy</a>. *</label>
+                    </div>
+
+                    <button type="submit" class="w-full bg-[#7AE2CF] hover:bg-[#5ec9b6] text-white font-bold py-4 px-6 rounded-full transition text-lg">
+                        Submit Enquiry
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Next Steps -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">What Happens Next?</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Our simple process for getting you the care you need</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Step 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                    <div class="text-[#7AE2CF] text-4xl mb-4 font-bold">1</div>
+                    <h3 class="text-xl font-bold mb-3">Submit Your Enquiry</h3>
+                    <p>Complete our simple form with details about your care needs and preferences.</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                    <div class="text-[#7AE2CF] text-4xl mb-4 font-bold">2</div>
+                    <h3 class="text-xl font-bold mb-3">We Contact You</h3>
+                    <p>Our care coordinator will call within 24 hours to discuss your requirements in detail.</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                    <div class="text-[#7AE2CF] text-4xl mb-4 font-bold">3</div>
+                    <h3 class="text-xl font-bold mb-3">Care Plan Created</h3>
+                    <p>We'll develop a personalized care plan and match you with suitable caregivers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Contact -->
+    <section class="py-16 bg-[#7AE2CF] text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Need Urgent Care Support?</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">For immediate assistance, please call our emergency care line</p>
+            <div class="flex justify-center">
+                <a href="tel:+1234567890" class="bg-white text-[#7AE2CF] px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition text-lg">
+                    <i class="fas fa-phone-alt mr-2"></i> Emergency: (123) 456-7890
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Frequently Asked Questions</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Common questions about our enquiry process</p>
+            </div>
+
+            <div class="max-w-3xl mx-auto space-y-6">
+                <!-- FAQ 1 -->
+                <div class="border rounded-lg overflow-hidden">
+                    <button class="faq-toggle w-full text-left p-6 bg-gray-50 hover:bg-gray-100 transition font-semibold flex justify-between items-center">
+                        <span>How quickly can care start after my enquiry?</span>
+                        <i class="fas fa-chevron-down transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden p-6 border-t">
+                        <p>We can often arrange care within 24-48 hours for urgent cases. For standard enquiries, we typically begin services within 3-5 days to ensure we match you with the most suitable caregiver.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="border rounded-lg overflow-hidden">
+                    <button class="faq-toggle w-full text-left p-6 bg-gray-50 hover:bg-gray-100 transition font-semibold flex justify-between items-center">
+                        <span>Is there a cost for making an enquiry?</span>
+                        <i class="fas fa-chevron-down transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden p-6 border-t">
+                        <p>No, there is absolutely no cost or obligation for making an enquiry. Our consultation and care planning services are completely free. We'll only discuss costs once we understand your specific needs.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="border rounded-lg overflow-hidden">
+                    <button class="faq-toggle w-full text-left p-6 bg-gray-50 hover:bg-gray-100 transition font-semibold flex justify-between items-center">
+                        <span>What areas do you cover?</span>
+                        <i class="fas fa-chevron-down transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden p-6 border-t">
+                        <p>We currently provide services throughout London (including Redbridge, Newham, Havering) and Essex. If you're outside these areas, please still get in touch as we may be able to help or recommend alternative providers.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="border rounded-lg overflow-hidden">
+                    <button class="faq-toggle w-full text-left p-6 bg-gray-50 hover:bg-gray-100 transition font-semibold flex justify-between items-center">
+                        <span>Can I meet the caregiver before care starts?</span>
+                        <i class="fas fa-chevron-down transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden p-6 border-t">
+                        <p>Yes, we encourage a "meet and greet" session where your assigned caregiver visits before care begins. This allows you to get to know them, discuss routines, and ensure it's a good match.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-[#7AE2CF] text-xl font-bold mb-4">About Us</h3>
+                    <p class="mb-4">Get A Care provides exceptional home care services with compassion, dignity, and respect for our clients and their families.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-[#7AE2CF] transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white hover:text-[#7AE2CF] transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white hover:text-[#7AE2CF] transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white hover:text-[#7AE2CF] transition"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-[#7AE2CF] text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-[#7AE2CF] transition">Home</a></li>
+                        <li><a href="services.html" class="hover:text-[#7AE2CF] transition">Services</a></li>
+                        <li><a href="about.html" class="hover:text-[#7AE2CF] transition">About Us</a></li>
+                        <li><a href="team.html" class="hover:text-[#7AE2CF] transition">Our Team</a></li>
+                        <li><a href="contact.html" class="hover:text-[#7AE2CF] transition">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-[#7AE2CF] text-xl font-bold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-[#7AE2CF] transition">Personal Care</a></li>
+                        <li><a href="#" class="hover:text-[#7AE2CF] transition">Companionship</a></li>
+                        <li><a href="#" class="hover:text-[#7AE2CF] transition">Medication Management</a></li>
+                        <li><a href="#" class="hover:text-[#7AE2CF] transition">Respite Care</a></li>
+                        <li><a href="#" class="hover:text-[#7AE2CF] transition">Specialized Care</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-[#7AE2CF] text-xl font-bold mb-4">Contact Us</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-[#7AE2CF]"></i>
+                            <span>123 Care Street, City</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-[#7AE2CF]"></i>
+                            <span>(123) 456-7890</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-[#7AE2CF]"></i>
+                            <span>enquiries@getacare.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p>&copy; 2025 Get A Care Ltd. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        hamburger.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            hamburger.innerHTML = mobileMenu.classList.contains('hidden') ? 
+                '<i class="fas fa-bars"></i>' : '<i class="fas fa-times"></i>';
+        });
+
+        // Service Option Selection
+        const serviceOptions = document.querySelectorAll('.service-option');
+        serviceOptions.forEach(option => {
+            option.addEventListener('click', () => {
+                // Remove selected class from all options
+                serviceOptions.forEach(opt => {
+                    opt.classList.remove('selected');
+                    opt.querySelector('input').checked = false;
+                    opt.querySelector('.bg-\\[\\#7AE2CF\\]').classList.add('hidden');
+                });
+                
+                // Add selected class to clicked option
+                option.classList.add('selected');
+                const radioInput = option.querySelector('input');
+                radioInput.checked = true;
+                option.querySelector('.bg-\\[\\#7AE2CF\\]').classList.remove('hidden');
+            });
+        });
+
+        // FAQ Toggle
+        const faqToggles = document.querySelectorAll('.faq-toggle');
+        faqToggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const content = toggle.nextElementSibling;
+                const icon = toggle.querySelector('i');
+                
+                content.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+    </script>
+</body>
+</html>

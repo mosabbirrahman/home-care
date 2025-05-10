@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team - Get A Care</title>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Libre Baskerville', serif;
+        }
+        .team-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .team-card:hover .team-social {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Navbar -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="text-3xl font-bold text-[#7AE2CF]">
+                Get<span class="text-gray-800">A Care</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="./index.html" class="font-bold text-gray-800 hover:text-[#7AE2CF] transition">Home</a>
+                <a href="./service.html" class="font-bold text-gray-800 hover:text-[#7AE2CF] transition">Services</a>
+                <a href="./about.html" class="font-bold text-gray-800 hover:text-[#7AE2CF] transition">About Us</a>
+                <a href="./career.html" class="font-bold text-gray-800 hover:text-[#7AE2CF] transition">Career</a>
+                <a href="./team.html" class="font-bold text-[#7AE2CF] transition">Our Team</a>
+                <a href="./enquire.html" class="font-bold text-gray-800 hover:text-[#7AE2CF] transition">Enquire Now</a>
+                <a href="./contact.html" class="bg-[#7AE2CF] text-white px-6 py-2 rounded-full font-bold hover:bg-[#5ec9b6] transition">Contact Us</a>
+            </div>
+            <button id="hamburger" class="md:hidden text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white w-full absolute left-0 top-full shadow-lg">
+            <div class="container mx-auto px-4 py-4 flex flex-col space-y-4">
+                <a href="./index.html" class="font-bold text-gray-800 hover:text-[#7AE2CF] transition py-2">Home</a>
+                <a href="./services.html" class="font-bold text-gray-800 hover:text-[#7AE2CF] transition py-2">Services</a>
+                <a href="./about.html" class="font-bold text-gray-800 hover:text-[#7AE2CF] transition py-2">About Us</a>
+                <a href="./career.html" class="font-bold text-gray-800 hover:text-[#7AE2CF] transition py-2">Career</a>
+                <a href="./team.html" class="font-bold text-[#7AE2CF] transition py-2">Our Team</a>
+                <a href="./enquire.html" class="font-bold text-gray-800 hover:text-[#7AE2CF] transition py-2">Enquire Now</a>
+                <a href="./contact.html" class="bg-[#7AE2CF] text-white px-6 py-2 rounded-full font-bold hover:bg-[#5ec9b6] transition text-center">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Team Hero -->
+    <section class="pt-32 pb-20 bg-[#7AE2CF] text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Meet Our Care Team</h1>
+            <p class="text-xl max-w-3xl mx-auto">Compassionate professionals dedicated to providing exceptional care with dignity and respect.</p>
+        </div>
+    </section>
+
+    <!-- Leadership Team -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Leadership Team</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Experienced professionals guiding our mission of compassionate care</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Team Member 1 -->
+                <div class="team-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300 relative">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" 
+                             alt="Sarah Johnson" 
+                             class="w-full h-80 object-cover">
+                        <div class="team-social absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4 opacity-0 transition duration-300 transform translate-y-5">
+                            <div class="flex justify-center space-x-4">
+                                <a href="#" class="text-white hover:text-[#7AE2CF] transition"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="text-white hover:text-[#7AE2CF] transition"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-1">Sarah Johnson</h3>
+                        <p class="text-[#7AE2CF] font-semibold mb-3">Founder & CEO</p>
+                        <p class="text-sm mb-4">With over 20 years in healthcare leadership, Sarah founded Get A Care to revolutionize home care services.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">RN, BSc Nursing</span>
+                            <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Dementia Specialist</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="team-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300 relative">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1562788869-4ed32648eb72?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" 
+                             alt="Michael Brown" 
+                             class="w-full h-80 object-cover">
+                        <div class="team-social absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4 opacity-0 transition duration-300 transform translate-y-5">
+                            <div class="flex justify-center space-x-4">
+                                <a href="#" class="text-white hover:text-[#7AE2CF] transition"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="text-white hover:text-[#7AE2CF] transition"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-1">Michael Brown</h3>
+                        <p class="text-[#7AE2CF] font-semibold mb-3">Director of Care Services</p>
+                        <p class="text-sm mb-4">Michael oversees all care operations, ensuring our services meet the highest standards of quality and safety.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">NVQ Level 5</span>
+                            <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Palliative Care</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="team-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300 relative">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" 
+                             alt="Amina Patel" 
+                             class="w-full h-80 object-cover">
+                        <div class="team-social absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4 opacity-0 transition duration-300 transform translate-y-5">
+                            <div class="flex justify-center space-x-4">
+                                <a href="#" class="text-white hover:text-[#7AE2CF] transition"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="text-white hover:text-[#7AE2CF] transition"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-1">Amina Patel</h3>
+                        <p class="text-[#7AE2CF] font-semibold mb-3">HR & Training Manager</p>
+                        <p class="text-sm mb-4">Amina leads our recruitment and training programs, ensuring our team has the skills and support they need.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">CIPD Qualified</span>
+                            <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Learning Specialist</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Care Team -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Care Professionals</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Meet some of our dedicated caregivers who make a difference every day</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Caregiver 1 -->
+                <div class="team-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" 
+                         alt="Emily Wilson" 
+                         class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-1">Emily Wilson</h3>
+                        <p class="text-[#7AE2CF] font-semibold mb-3">Senior Caregiver</p>
+                        <p class="text-sm mb-3">Specializing in dementia care with 8 years of experience helping clients maintain independence.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">NVQ Level 3</span>
+                            <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">5+ years</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Caregiver 2 -->
+                <div class="team-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" 
+                         alt="David Thompson" 
+                         class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-1">David Thompson</h3>
+                        <p class="text-[#7AE2CF] font-semibold mb-3">Mobility Specialist</p>
+                        <p class="text-sm mb-3">Helps clients with physical challenges maintain mobility and independence at home.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Physio trained</span>
+                            <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">7+ years</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Caregiver 3 -->
+                <div class="team-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" 
+                         alt="Sophia Martinez" 
+                         class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-1">Sophia Martinez</h3>
+                        <p class="text-[#7AE2CF] font-semibold mb-3">Palliative Care Specialist</p>
+                        <p class="text-sm mb-3">Provides compassionate end-of-life care and support for families.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">NVQ Level 3</span>
+                            <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">10+ years</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Caregiver 4 -->
+                <div class="team-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1590086783191-a0694c7d1e6e?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" 
+                         alt="James Wilson" 
+                         class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-1">James Wilson</h3>
+                        <p class="text-[#7AE2CF] font-semibold mb-3">Care Coordinator</p>
+                        <p class="text-sm mb-3">Ensures seamless care delivery and communication between families and caregivers.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">NVQ Level 4</span>
+                            <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">6+ years</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <p class="mb-6">We have over 50 dedicated care professionals across London and Essex.</p>
+                <a href="career.html" class="bg-[#7AE2CF] hover:bg-[#5ec9b6] text-white px-8 py-3 rounded-full font-bold inline-block transition">Join Our Team</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Values -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2 order-2 lg:order-1">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Our Team Values</h2>
+                    <p class="text-lg mb-6">
+                        Every member of our team embodies these core principles in their daily work:
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <div class="bg-[#7AE2CF] text-white rounded-full p-2 mr-4">
+                                <i class="fas fa-heart text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Compassion First</h4>
+                                <p>We approach every interaction with genuine empathy and understanding.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-[#7AE2CF] text-white rounded-full p-2 mr-4">
+                                <i class="fas fa-shield-alt text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Professional Excellence</h4>
+                                <p>We maintain the highest standards through continuous learning and development.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-[#7AE2CF] text-white rounded-full p-2 mr-4">
+                                <i class="fas fa-hands-helping text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Team Support</h4>
+                                <p>We foster a collaborative environment where everyone is valued and supported.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="lg:w-1/2 order-1 lg:order-2">
+                    <img src="https://images.unsplash.com/photo-1521791055366-0d553872125f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                         alt="Team meeting" 
+                         class="rounded-lg shadow-xl w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training & Certification -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Standards</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Every team member meets rigorous qualifications and ongoing training requirements</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Standard 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                    <div class="text-[#7AE2CF] text-5xl mb-4">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Thorough Vetting</h3>
+                    <p>Enhanced DBS checks, reference verification, and thorough interviews for all staff.</p>
+                </div>
+
+                <!-- Standard 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                    <div class="text-[#7AE2CF] text-5xl mb-4">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Comprehensive Training</h3>
+                    <p>Mandatory induction training plus specialist courses in dementia, palliative care, and more.</p>
+                </div>
+
+                <!-- Standard 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                    <div class="text-[#7AE2CF] text-5xl mb-4">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Ongoing Development</h3>
+                    <p>Regular refresher training and support for professional qualifications like NVQs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-[#7AE2CF] text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Meet Your Care Team?</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">Contact us today to discuss how we can support you or your loved one with our compassionate professionals.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="contact.html" class="bg-white text-[#7AE2CF] px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition">Contact Us</a>
+                <a href="tel:+1234567890" class="bg-transparent border-2 border-white px-8 py-3 rounded-full font-bold hover:bg-white hover:text-[#7AE2CF] transition">Call Now: (123) 456-7890</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-[#7AE2CF] text-xl font-bold mb-4">About Us</h3>
+                    <p class="mb-4">Get A Care provides exceptional home care services with compassion, dignity, and respect for our clients and their families.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-[#7AE2CF] transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white hover:text-[#7AE2CF] transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white hover:text-[#7AE2CF] transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white hover:text-[#7AE2CF] transition"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-[#7AE2CF] text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-[#7AE2CF] transition">Home</a></li>
+                        <li><a href="services.html" class="hover:text-[#7AE2CF] transition">Services</a></li>
+                        <li><a href="about.html" class="hover:text-[#7AE2CF] transition">About Us</a></li>
+                        <li><a href="team.html" class="hover:text-[#7AE2CF] transition">Our Team</a></li>
+                        <li><a href="contact.html" class="hover:text-[#7AE2CF] transition">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-[#7AE2CF] text-xl font-bold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-[#7AE2CF] transition">Personal Care</a></li>
+                        <li><a href="#" class="hover:text-[#7AE2CF] transition">Companionship</a></li>
+                        <li><a href="#" class="hover:text-[#7AE2CF] transition">Medication Management</a></li>
+                        <li><a href="#" class="hover:text-[#7AE2CF] transition">Respite Care</a></li>
+                        <li><a href="#" class="hover:text-[#7AE2CF] transition">Specialized Care</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-[#7AE2CF] text-xl font-bold mb-4">Contact Us</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-[#7AE2CF]"></i>
+                            <span>123 Care Street, City</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-[#7AE2CF]"></i>
+                            <span>(123) 456-7890</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-[#7AE2CF]"></i>
+                            <span>info@getacare.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p>&copy; 2025 Get A Care Ltd. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        hamburger.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            hamburger.innerHTML = mobileMenu.classList.contains('hidden') ? 
+                '<i class="fas fa-bars"></i>' : '<i class="fas fa-times"></i>';
+        });
+    </script>
+</body>
+</html>
